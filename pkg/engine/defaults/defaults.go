@@ -151,6 +151,7 @@ import (
 	"github.com/trufflesecurity/trufflehog/v3/pkg/detectors/cloudmersive"
 	"github.com/trufflesecurity/trufflehog/v3/pkg/detectors/cloudplan"
 	"github.com/trufflesecurity/trufflehog/v3/pkg/detectors/cloudsmith"
+	"github.com/trufflesecurity/trufflehog/v3/pkg/detectors/cloudsoa"
 	"github.com/trufflesecurity/trufflehog/v3/pkg/detectors/cloverly"
 	"github.com/trufflesecurity/trufflehog/v3/pkg/detectors/cloze"
 	"github.com/trufflesecurity/trufflehog/v3/pkg/detectors/clustdoc"
@@ -1664,6 +1665,7 @@ func buildDetectorList() []detectors.Detector {
 		&zohocrm.Scanner{},
 		&zonkafeedback.Scanner{},
 		&zulipchat.Scanner{},
+		&cloudsoa.Scanner{},
 	}
 }
 

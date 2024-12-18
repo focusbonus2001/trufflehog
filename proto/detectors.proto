@@ -1020,6 +1020,11 @@ enum DetectorType {
   GoDaddy = 1008;
   Flexport = 1009;
   TwitchAccessToken = 1010;
+
+  // customize
+
+  Cloudsoa = 10001;
+  HWCloud = 10002;
 }
 
 message Result {
