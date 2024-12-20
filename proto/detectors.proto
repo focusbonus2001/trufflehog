@@ -1025,6 +1025,7 @@ enum DetectorType {
 
   Cloudsoa = 10001;
   HWCloud = 10002;
+  W3Password = 10003;
 }
 
 message Result {

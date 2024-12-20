@@ -48,7 +48,7 @@ func (s Scanner) FromData(ctx context.Context, verify bool, data []byte) (result
 
 			resSkMatch := strings.TrimSpace(skMatch[0])
 			s1 := detectors.Result{
-				DetectorType: detectorspb.DetectorType_CustomRegex,
+				DetectorType: detectorspb.DetectorType_HWCloud,
 				Raw:          []byte(resMatch),
 				RawV2:        []byte(fmt.Sprintf("ak:%s,sk:%s", resMatch, resSkMatch)),
 			}
@@ -100,7 +100,7 @@ func verifyMatch(ctx context.Context, client *http.Client, token string) (bool, 
 }
 
 func (s Scanner) Type() detectorspb.DetectorType {
-	return detectorspb.DetectorType_CustomRegex
+	return detectorspb.DetectorType_HWCloud
 }
 
 func (s Scanner) Description() string {
